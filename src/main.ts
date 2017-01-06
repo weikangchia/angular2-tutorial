@@ -9,4 +9,13 @@ if (environment.production) {
   enableProdMode();
 }
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+var webComponentsFlag = false;
+document.addEventListener('WebComponentsReady', () => {
+  if (!webComponentsFlag) {
+    platformBrowserDynamic().bootstrapModule(AppModule);
+  }
+  webComponentsFlag = true;
+});
+if (webComponentsFlag) {
+  platformBrowserDynamic().bootstrapModule(AppModule);
+}

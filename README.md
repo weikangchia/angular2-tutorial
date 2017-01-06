@@ -46,6 +46,13 @@ Now you are ready to deploy your app. In the root of your app, you should have a
 
 Run `firebase deploy` to deploy your app.
 
+## Integrate Angular 2 with Polymer
+
+Documentation: [https://vaadin.com/docs/-/part/elements/angular2-polymer/ng-cli-webpack.html](https://vaadin.com/docs/-/part/elements/angular2-polymer/ng-cli-webpack.html)
+
+### Issues
+1. Can't Use in Angular cli 22: [https://github.com/vaadin/angular2-polymer/issues/111](https://github.com/vaadin/angular2-polymer/issues/111)
+
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
