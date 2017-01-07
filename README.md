@@ -2,6 +2,11 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.24.
 
+## Lesson
+
+1. [Routing and Navigation Basics](https://www.youtube.com/watch?v=Uvj_7ZMrHmg)
+
+
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
@@ -45,6 +50,25 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 Now you are ready to deploy your app. In the root of your app, you should have a new file `firebase.json` file created. This file lets the Firebase CLI knows how to deploy your application.
 
 Run `firebase deploy` to deploy your app.
+
+## UI Framework
+
+This tutorial is using [Semantic UI framework](http://semantic-ui.com/).
+
+Currently, Semantic UI angular bindings are still in development. For more information go check out [Semantic UI Integration](http://semantic-ui.com/introduction/integrations.html).
+
+### How to install
+1. Follow [Semantic UI documentatio guide](http://semantic-ui.com/introduction/getting-started.html)
+   - Installation folder destination: `src/assets/semantic`
+2. Install JQuery
+```
+npm install jquery --save
+```
+
+### Change theme
+1. Open `assets/semantic/src/theme.config`
+2. Change the theme
+3. Run `gulp build`
 
 ## Further help
 
