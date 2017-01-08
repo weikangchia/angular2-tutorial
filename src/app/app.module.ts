@@ -10,8 +10,11 @@ import {AutoGrowDirective} from "./auto-grow.directive";
 import {HeaderComponent} from "./header/header.component";
 import {FooterComponent} from './footer/footer.component';
 import {AboutComponent} from './about/about.component';
-import {routes} from "./app.router";
-import { HomeComponent } from './home/home.component';
+import {routes} from "./app.routes";
+import {HomeComponent} from './home/home.component';
+
+import {Ng2PaginationModule} from 'ng2-pagination';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,15 @@ import { HomeComponent } from './home/home.component';
     AutoGrowDirective,
     FooterComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    PaginationComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routes
+    routes,
+    Ng2PaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent],
